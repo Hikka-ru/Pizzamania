@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(Font/Raleway-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway';
+    scrollbar-width: thin;
+    scrollbar-color: #75050c #ffffff00;
+}
+.desktop {
+    position: relative;
+}
+header {
+    z-index: 10;
+    top: 0%;
+    position: sticky;
+    padding: 1%;
+    padding-left: 0;
+    background-color: #75050c;
+    color: #ffedab;
+    width: 99%;
+    height: 25%;
+}
+.Hd {
+    width: 98%;
+    display: flex;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.logoButt {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer
+}
+.logoButt:hover {
+    background-color: #75050c;
+}
+.accButt {
+    background-image: url(user-profile-account-or-contacts-silhouette-icon-isolated-on-white-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.bskButt {
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+    margin-left: -80px;
+    margin-top: 15px;
+    width: 130px;
+    background-color: #75050c;
+    color: #ffedab;
+    height: 60px;
+    border-radius: 150px;
+}
+.bskButt:hover { 
+    background-color: #ffedab;
+    color: #75050c;
+    transition: 0.4s;
+}
+button {
+    font-family: 'Raleway';
+    border: none;
+    border-radius: 150px;
+    background-color: #75050c;
+    color: #ffedab;
+}
+button:hover {
+    background-color: #ffedab;
+    color: #75050c;
+    transition: 0.4s;
+}
+.HdButt {
+    background-color: #75050c;
+    color: #ffedab;
+    height: 60px;
+    width: 100px;
+    border-radius: 150px;
+    margin-top: 0.5%;
+}
+.Picked_HdButt {
+    background-color: #ffedab;
+    color: #75050c;
+    height: 60px;
+    width: 100px;
+    border-radius: 150px;
+    margin-top: 0.5%;
+}
+.HdButt:hover {
+    background-color: #ffedab;
+    color: #75050c;
+    transition: 0.4s;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    background-color: #75050c;
+}
+.f_section {
+    font-size: 22px;
+    width: 100%;
+    color: #ffedab;
+    margin-right: 3%;
+}
+.Ctgr {
+    overflow: auto;
+    display: flex;
+    min-height: 435px
+}
+.tovar {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background-color: #ffedab;
+    margin: 4px;
+    margin-top: 45px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 3px;
+    height: 325px;
+    width: 200px;
+}
+.tovarimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.tovar:hover {
+    box-shadow: 0 5px 25px#858585fe;
+    z-index: 2;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.desc {
+    font-size: 14px;
+}
+.tovarInfo {
+    font-size: 20px;
+    left: 32%;
+    position: absolute;
+    bottom: 0
+}
+.review {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 50vw;
+    height: 25vh;
+    background-color: #75050c;
+    color: aliceblue;
+    border-radius: 150px;
+}
+.rewtext {
+    font-size: 80%;
+}
+.rew_section { 
+    margin-left: 10px;
+    width: 65vw;
+}
+.section_a {
+    margin-top: 1%;
+    height: 10vh;
+    width: 100vw;
+    font-size: 120%;
+}
+.Nick {
+    color: #ffedab;
+}
+.ava {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.Form_r {
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    width: 50vw;
+    height: 35vh;
+    background-color: #4f6815;
+    color: aliceblue;
+    border-radius: 90px;
+}
+.Form_r_Butt{
+    background-color: #4f6815;
+    position: absolute;
+    bottom: 10%;
+    font-size: 28px;
+}
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #ffedab;
+}
+.star-rating label:hover ~ label {
+    color: #ffedab;
+}
+.section_d {
+    color: #75050c;
+    text-align: left;
+    height: 100%;
+    width: 50%;
+    font-size: 400%;
+}
+.window {
+    position: relative;
+    color: aliceblue;
+    background-color: #4f6815;
+    height: 100vh;
+    width: 50vw;
+    border-radius: 25px;
+    margin: 1%;
+    padding: 1%;
+}
+.DelButt {
+    position: absolute;
+    font-size: 30px;
+    background-color: #4f6815;
+    color: #ffedab;
+    right: 25%;
+    left: 25%;
+    margin: 15px;
+    height: 80px;
+}
+.DelButt:hover {
+    scale: 1.2;
+    color: #4f6815;
+    background-color: #ffedab;
+}
+iframe {
+    width: 100%;
+    height: 50%;
+    border: none;
+    border-radius: 15px;
+}
+.au_section {
+    font-size: 18px;
+    width: 75%;
+    color: #ffedab;
+}
+.au_window {
+    background-color: #75050c;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90vw;
+    border-radius: 150px;
+}
+.au_img {
+    margin-top: 5px;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 100%;
+}
+.lgnwndw {
+    position: absolute;
+    background-color: #75050c;
+    color: #ffedab;
+    top: 5%;
+    bottom: 5%;
+    right: 30%;
+    left: 30%;
+    height: 90vh;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
